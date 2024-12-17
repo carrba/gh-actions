@@ -1,6 +1,6 @@
-name: 01 - Building Blocks
+name: 03 - Runners
 
-on: workflow_dispatch
+on: push
 
 jobs:
     ubuntu-echo:
