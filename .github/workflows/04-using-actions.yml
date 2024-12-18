@@ -5,6 +5,9 @@ on: push
 jobs:
     build:
         runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: 04-using-actions/my-test-app
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
@@ -13,6 +16,5 @@ jobs:
               with:
                 node-version: '20.x'
             - name: Install Dependencies
-              working-directory: 04-using-actions/my-test-app
               run: npm ci
               
